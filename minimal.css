@@ -11,6 +11,7 @@ menu, footer, header, nav, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
+	font-weight: normal;
 }
 
 article, aside, canvas, figure, figure img, figcaption, hgroup,
@@ -69,38 +70,70 @@ cols    1     2      3      4      5      6      7      8      9      10
 px      68    160    252    344    436    528    620    712    804    896    */
 
 body {
-	width: 896px;
-	padding: 72px 48px 84px;
+	width: 960px;
+	/* padding: 72px 48px 84px; */
 	background: rgb(232,232,232);
 	margin: auto;
 	color: rgb(60,60,60);
 	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
 }
 
+#page {
+	background: #f8f8f8;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+}
+
+#header {
+	clear: both;
+	margin-top: 48px;
+	margin-right: 48px;
+	margin-bottom: 12px;
+	margin-left: 48px;
+}
+
 #content {
 	float: left;
-	width: 528px;
-	margin-right: 24px;
+	width: 520px;
+	margin-top: 12px;
+	margin-right: 12px;
 	margin-bottom: 24px;
-	padding: 24px;
-	background: #f8f8f8;
+	margin-left: 48px;
+	/* padding: 24px; */
 	clear: left;
-	/*
-		-moz-border-radius: 10px;
-		-webkit-border-radius: 10px;
-		border-radius: 10px;
-	*/
 }
 
 #aside {
 	float: right;
-	width: 344px;
+	width: 320px;
+	margin-top: 12px;
+	margin-right: 48px;
+	margin-bottom: 24px;
+	margin-left: 12px;
 	clear: right;
 }
 
 #footer {
+	margin-right: 48px;
+	margin-bottom: 48px;
+	margin-left: 48px;
 	clear: both;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	padding: 24px 24px 6px 24px;
+}
+
+p {
+	padding: 6px 24px 6px 24px;
+}
+
+ul {
+	margin-top: 6px;
+	margin-right: 24px;
+	margin-bottom: 12px;
+	margin-left: 48px;
+}
 
 
