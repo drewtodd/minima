@@ -61,17 +61,13 @@ body {
 	line-height: 18px;
 }
 
-/*		Default Layout: 992px. 
+/*		Default Layout: 760px. 
 		Gutters: 24px.
 		Outer margins: 48px.
-		Leftover space for scrollbars @1024px: 32px.
--------------------------------------------------------------------------------
-cols    1     2      3      4      5      6      7      8      9      10
-px      68    160    252    344    436    528    620    712    804    896    */
+*/
 
 body {
-	width: 960px;
-	/* padding: 72px 48px 84px; */
+	width: 760px;
 	background: rgb(232,232,232);
 	margin: auto;
 	color: rgb(60,60,60);
@@ -80,50 +76,127 @@ body {
 
 #page {
 	background: #f8f8f8;
-		-moz-border-radius: 4px;
-		-webkit-border-radius: 4px;
-		border-radius: 4px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	-moz-box-shadow: 0 0 24px 6px #cfcfcf;
+	-webkit-box-shadow: 0 0 24px 6px #cfcfcf;
+	box-shadow: 0 0 24px 6px #cfcfcf;
+	
 }
 
 #header {
-	clear: both;
 	margin-top: 48px;
 	margin-right: 48px;
 	margin-bottom: 12px;
 	margin-left: 48px;
 }
 
-#content {
+h1.sitehead {
+	padding-top: 96px;
 	float: left;
-	width: 520px;
+}
+
+#navmain {
+	margin-top: 0px;
+	float: right;
+	padding-top: 24px;
+}
+
+#navmain ul {
+	list-style-type: none;
+}
+
+#navmain li {
+	float: left;
+}
+
+#navmain a {
+	text-decoration: none;
+	border: 0px;
+	color: #ddd;
+	padding: 96px 12px 6px 12px;
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+#navmain a:hover {
+	background: #555;
+	color: #f8f8f8;
+	-moz-border-bottom-left-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	-moz-border-bottom-right-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+#navmain a:visited {
+
+}
+
+#content {
 	margin-top: 12px;
-	margin-right: 12px;
+	margin-right: 48px;
 	margin-bottom: 24px;
 	margin-left: 48px;
 	/* padding: 24px; */
 	clear: left;
 }
 
-#aside {
+.navlocal {
+	width: 30%;
 	float: right;
-	width: 320px;
-	margin-top: 12px;
-	margin-right: 48px;
-	margin-bottom: 24px;
-	margin-left: 12px;
-	clear: right;
+	margin: 12px 24px 24px 24px;
+	padding: 12px;
+	background: #ddd;
+	border: 1px solid #ccc;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+div.navlocal h4 {
+	margin-top: 0px;
+	padding-top: 6px;
 }
 
 #footer {
 	margin-right: 48px;
-	margin-bottom: 48px;
+	margin-bottom: 96px;
 	margin-left: 48px;
-	clear: both;
+	clear: left;
+	padding-top: 48px;
+	padding-bottom: 48px;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	padding: 24px 24px 6px 24px;
 }
+
+/*	=LINKS
+	------------------------------------------------------ */
+a {
+	text-decoration: none;
+	color: #666;
+	border-bottom: dotted 1px #666;
+}
+
+a:hover {
+	color: #ccc;
+	border-bottom: dotted 1px #ccc;
+}
+
+a:visited {
+	
+}
+
+a:active {
+	
+}
+
+/*	=STANDARD ELEMENTS
+	------------------------------------------------------ */
 
 p {
 	padding: 6px 24px 6px 24px;
@@ -136,4 +209,37 @@ ul {
 	margin-left: 48px;
 }
 
+blockquote {
+	
+}
 
+/*	=IMAGES
+		Full-column width: 616px / 568px with 24px padding
+		Inset width: 236px
+	------------------------------------------------------ */
+
+img {
+
+}
+
+.img-center, .img-center img {
+	width: 616px;
+}
+
+.img-center {
+	padding: 12px 0px 12px 0px;
+	color: #999;
+	font-style: italic;
+	font-size: small;		
+}
+
+.img-right, .img-right img  {
+	width: 236px;
+}
+.img-right {
+	padding: 0px 0px 24px 24px;
+	float: right;
+	color: #999;
+	font-style: italic;
+	font-size: small;	
+}
