@@ -123,10 +123,10 @@ h1.sitehead {
 #navmain a:hover {
 	background: #555;
 	color: #f8f8f8;
-	-moz-border-bottom-left-radius: 6px;
+	-moz-border-radius-bottomleft: 6px;
 	-webkit-border-bottom-left-radius: 6px;
 	border-bottom-left-radius: 6px;
-	-moz-border-bottom-right-radius: 6px;
+	-moz-border-radius-bottomright: 6px;
 	-webkit-border-bottom-right-radius: 6px;
 	border-bottom-right-radius: 6px;
 }
