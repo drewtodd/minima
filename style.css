@@ -1,0 +1,265 @@
+/*
+Theme Name: Minimal
+Theme URI: http://drwtod.com/minimal
+Description: A minimal, bare-bones Wordpress Theme
+Author: Andrew Todd
+Author URI: http://drwtod.com
+Version 1.0
+Tags: minimal, white, fixed
+
+License: TBD
+License URI: TBD
+
+No-frills theme built for drwtod.com
+*/
+
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: normal;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+/*	Typography presets
+	------------------	*/
+
+.gigantic {
+	font-size: 110px;
+	line-height: 120px;
+	letter-spacing: -2px;
+}
+
+.huge, h1 {
+	font-size: 68px;
+	line-height: 72px;
+	letter-spacing: -1px;
+}
+
+.large, h2 {
+	font-size: 42px;
+	line-height: 48px;
+}
+
+.bigger, h3 {
+	font-size: 26px;
+	line-height: 36px;
+}
+
+.big, h4 {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+body {
+	font: 18px/28px Georgia, serif;
+	/*font: 16px/24px Helvetica, Arial, sans-serif;*/
+}
+
+.small, small {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+/*		Default Layout: 760px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+*/
+
+body {
+	width: 760px;
+	background: rgb(232,232,232);
+	margin: auto;
+	color: rgb(60,60,60);
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+}
+
+#page {
+	background: #f8f8f8;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	-moz-box-shadow: 0 0 24px 6px #d3d3d3;
+	-webkit-box-shadow: 0 0 24px 6px #d3d3d3;
+	box-shadow: 0 0 24px 6px #d3d3d3;
+	
+}
+
+#header {
+	margin-top: 48px;
+	margin-right: 48px;
+	margin-bottom: 12px;
+	margin-left: 48px;
+}
+
+h1.sitehead {
+	padding-top: 96px;
+	float: left;
+}
+
+#navmain {
+	margin-top: 0px;
+	float: right;
+	padding-top: 24px;
+}
+
+#navmain ul {
+	list-style-type: none;
+}
+
+#navmain li {
+	float: left;
+}
+
+#navmain a {
+	text-decoration: none;
+	border: 0px;
+	color: #ccc;
+	padding: 96px 12px 6px 12px;
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+#navmain a:hover {
+	/* background: #555; */
+	background: #900;
+	color: #f0f0f0;
+	-moz-border-radius-bottomleft: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+#navmain a:visited {
+
+}
+
+#content {
+	margin-top: 12px;
+	margin-right: 48px;
+	margin-bottom: 24px;
+	margin-left: 48px;
+	/* padding: 24px; */
+	clear: left;
+}
+
+.navlocal {
+	width: 30%;
+	float: right;
+	margin: 12px 24px 24px 24px;
+	padding: 12px;
+	background: #e0e0e0;
+	border: 1px solid #ccc;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+div.navlocal h4 {
+	margin-top: 0px;
+	padding-top: 6px;
+}
+
+#footer {
+	margin-right: 48px;
+	margin-bottom: 96px;
+	margin-left: 48px;
+	clear: left;
+	padding-top: 48px;
+	padding-bottom: 48px;
+}
+
+#footer p {
+	color: #bbb;
+	font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 24px 24px 6px 24px;
+}
+
+/*	=LINKS
+	------------------------------------------------------ */
+a {
+	text-decoration: none;
+	color: #666;
+	border-bottom: dotted 1px #666;
+}
+
+a:hover {
+	color: #ccc;
+	border-bottom: dotted 1px #ccc;
+}
+
+a:visited {
+	
+}
+
+a:active {
+	
+}
+
+/*	=STANDARD ELEMENTS
+	------------------------------------------------------ */
+
+p {
+	padding: 6px 24px 6px 24px;
+}
+
+ul {
+	margin-top: 6px;
+	margin-right: 24px;
+	margin-bottom: 12px;
+	margin-left: 48px;
+}
+
+blockquote {
+	
+}
+
+/*	=IMAGES
+		Full-column width: 616px / 568px with 24px padding
+		Inset width: 236px
+	------------------------------------------------------ */
+
+img {
+
+}
+
+.img-center, .img-center img {
+	width: 616px;
+}
+
+.img-center {
+	padding: 12px 0px 12px 0px;
+	color: #999;
+	font-style: italic;
+	font-size: small;		
+}
+
+.img-right, .img-right img  {
+	width: 236px;
+}
+.img-right {
+	padding: 0px 0px 24px 24px;
+	float: right;
+	color: #999;
+	font: 16px/20px Georgia, serif italic;	
+}
