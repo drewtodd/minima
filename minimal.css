@@ -52,7 +52,7 @@ a img {border: 0;}
 }
 
 body {
-	font: 16px/24px Georgia, serif;
+	font: 18px/28px Georgia, serif;
 	/*font: 16px/24px Helvetica, Arial, sans-serif;*/
 }
 
@@ -114,21 +114,22 @@ h1.sitehead {
 #navmain a {
 	text-decoration: none;
 	border: 0px;
-	color: #ddd;
+	color: #ccc;
 	padding: 96px 12px 6px 12px;
 	margin-left: 6px;
 	margin-right: 6px;
 }
 
 #navmain a:hover {
-	background: #555;
-	color: #f8f8f8;
-	-moz-border-radius-bottomleft: 6px;
-	-webkit-border-bottom-left-radius: 6px;
-	border-bottom-left-radius: 6px;
-	-moz-border-radius-bottomright: 6px;
-	-webkit-border-bottom-right-radius: 6px;
-	border-bottom-right-radius: 6px;
+	/* background: #555; */
+	background: #900;
+	color: #f0f0f0;
+	-moz-border-radius-bottomleft: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	border-bottom-right-radius: 3px;
 }
 
 #navmain a:visited {
@@ -149,7 +150,7 @@ h1.sitehead {
 	float: right;
 	margin: 12px 24px 24px 24px;
 	padding: 12px;
-	background: #ddd;
+	background: #e0e0e0;
 	border: 1px solid #ccc;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
@@ -168,6 +169,11 @@ div.navlocal h4 {
 	clear: left;
 	padding-top: 48px;
 	padding-bottom: 48px;
+}
+
+#footer p {
+	color: #bbb;
+	font-size: 14px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -240,6 +246,5 @@ img {
 	padding: 0px 0px 24px 24px;
 	float: right;
 	color: #999;
-	font-style: italic;
-	font-size: small;	
+	font: 16px/20px Georgia, serif italic;	
 }
