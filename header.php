@@ -23,6 +23,6 @@
                         <li><a href="#">Archive</a></li>
                     </ul>
                 </div>
-                <h1 class="sitehead"><a href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></h1>
+                <h1 class="sitehead"><a href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a></h1>
             </div>
 
