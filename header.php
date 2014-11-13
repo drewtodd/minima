@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title></title>
+        <title><?php wp_title('|',1,'right'); ?> ~ <?php bloginfo('name'); ?></title>
             <!--[if lt IE 9]>
                 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
             <![endif]-->
@@ -23,6 +23,6 @@
                         <li><a href="#">Archive</a></li>
                     </ul>
                 </div>
-                <h1 class="sitehead"><a href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+                <h1 class="<?php if (is_home()) { echo "sitehead"; } else { echo "pagehead"; } ?> "><a href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a></h1>
             </div>
 
