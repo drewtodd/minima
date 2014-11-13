@@ -15,14 +15,29 @@
 
     <body lang="en">
         <div id="page">
-            <div id="header">
-                <div id="navmain">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Archive</a></li>
-                    </ul>
+            <header>
+                <div id="header">
+                    <nav>
+                        <div id="navmain">
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <?php wp_list_pages(array('title_li' => '')); ?>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <?php
+                    if (is_home()) {
+                        $header_class = "sitehead";
+                        $header_href_open = "";
+                        $header_href_close = "";
+                    } else {
+                        $header_class = "pagehead";
+                        $header_href_open = "<a href=" . site_url() . ">";
+                        $header_href_close = "</a>";
+                    }
+                    ?>
+                    <h1 class="<?php echo $header_class; ?> "><?php echo $header_href_open; ?><?php bloginfo('name'); ?><?php echo $header_href_close; ?></h1>
                 </div>
-                <h1 class="<?php if (is_home()) { echo "sitehead"; } else { echo "pagehead"; } ?> "><a href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-            </div>
+            </header>
 

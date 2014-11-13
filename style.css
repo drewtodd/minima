@@ -114,6 +114,12 @@ h1.sitehead {
 	float: left;
 }
 
+h1.pagehead {
+	font-size: 24px;
+	padding-top: 8px;
+	float: left;
+}
+
 #navmain {
 	margin-top: 0px;
 	float: right;
@@ -234,6 +240,12 @@ ul {
 
 blockquote {
 	
+}
+
+p.time-stamp {
+	color: #bbb;
+	font-size: small;
+	font-style: italic;
 }
 
 /*	=IMAGES

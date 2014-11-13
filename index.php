@@ -1,14 +1,27 @@
 <?php get_header(); ?>
 
-			<div id="content">
-				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			<section>
+                <div id="content">
+    				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-					<h1><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h1>	
-					<?php the_content(); ?>
+    					<article>
+                            <header>
+                                <h1><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h1>	
+                            </header>
+        					<?php the_content(); ?>
+                        </article>
 
-				<?php endwhile; else: ?>
-					<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-				<?php endif; ?>
-			</div>
+    				<?php endwhile; else: ?>
+    					<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+    				<?php endif; ?>
+
+                    <nav>
+                        <div class="navpage">
+                             <div class="nav-prev">&lt; Previous entry</div>
+                       </div>
+                   </nav>
+    			</div>
+            </section>
+
 
 <?php get_footer(); ?>
