@@ -98,7 +98,6 @@ body {
 	-moz-box-shadow: 0 0 24px 6px #d3d3d3;
 	-webkit-box-shadow: 0 0 24px 6px #d3d3d3;
 	box-shadow: 0 0 24px 6px #d3d3d3;
-	
 }
 
 #header {
@@ -150,7 +149,7 @@ h1.pagehead a {
 
 #navmain a:hover, navmain a:active {
 	/* background: #555; */
-	background: #900;
+	background: #b00;
 	color: #f0f0f0;
 	-moz-border-radius-bottomleft: 3px;
 	-webkit-border-bottom-left-radius: 3px;
@@ -158,6 +157,11 @@ h1.pagehead a {
 	-moz-border-radius-bottomright: 3px;
 	-webkit-border-bottom-right-radius: 3px;
 	border-bottom-right-radius: 3px;
+	-webkit-transition: all .5s ease-in-out;
+  	-moz-transition: all .5s ease-in-out;
+  	-ms-transition: all .5s ease-in-out;
+  	-o-transition: all .5s ease-in-out;
+  	transition: all .5s; ease-in-out
 }
 
 #navmain a:visited {
