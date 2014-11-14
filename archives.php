@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php 
+/*
+Template Name: Archives
+*/
+get_header(); ?>
 
             <section>
                 <div id="content" role="main">
@@ -7,19 +11,16 @@
                         <article>
                             <h1><?php the_title(); ?></h1> 
                             <?php the_content(); ?>
-                            <p class="time-stamp">Originally posted: <?php the_time('F j, Y'); ?></p>
+
+                            <h2>Contents of this site</h2>
+                            <ul>
+                                <?php wp_get_archives('type=postbypost'); ?>
+                            </ul>
                         </article>
 
                     <?php endwhile; else: ?>
-                        <p><?php _e('Sorry, this post does not exist.'); ?></p>
+                        <p><?php _e('Sorry, this page does not exist.'); ?></p>
                     <?php endif; ?>
-
-                    <nav>
-                        <div class="navpage">
-                             <div class="nav-prev">&lt; Previous entry</div>
-                             <div class="nav-next">Next entry &gt;</div>
-                       </div>
-                    </nav>
                 </div>
             </section>
 

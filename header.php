@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title><?php wp_title('|',1,'right'); ?> ~ <?php bloginfo('name'); ?></title>
+        <title><?php wp_title('|',1,'right'); ?> <?php bloginfo('name'); ?></title>
             <!--[if lt IE 9]>
                 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
             <![endif]-->
@@ -26,9 +26,11 @@
                         </div>
                     </nav>
 
+                    
                     <?php
                     if (is_home()) {
-                        $header_class = "sitehead";
+                        /*$header_class = "sitehead";*/
+                        $header_class = "pagehead";
                         $header_href_open = "";
                         $header_href_close = "";
                     } else {

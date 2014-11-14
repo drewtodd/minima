@@ -117,7 +117,12 @@ h1.sitehead {
 h1.pagehead {
 	font-size: 24px;
 	padding-top: 8px;
+	color: #b00;
 	float: left;
+}
+
+h1.pagehead a {
+	color: #b00;
 }
 
 #navmain {
@@ -137,13 +142,13 @@ h1.pagehead {
 #navmain a {
 	text-decoration: none;
 	border: 0px;
-	color: #ccc;
+	color: #999;
 	padding: 96px 12px 6px 12px;
 	margin-left: 6px;
 	margin-right: 6px;
 }
 
-#navmain a:hover {
+#navmain a:hover, navmain a:active {
 	/* background: #555; */
 	background: #900;
 	color: #f0f0f0;
@@ -166,6 +171,16 @@ h1.pagehead {
 	margin-left: 48px;
 	/* padding: 24px; */
 	clear: left;
+}
+
+#content ul {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#content ul li {
+	padding-top: 13px;
+	padding-bottom: 9px;
 }
 
 .navlocal {
@@ -239,7 +254,12 @@ ul {
 }
 
 blockquote {
-	
+	font-size: 22px;
+	line-height: 32px;
+	color: #999;
+	border-left: 4px solid #d3d3d3;
+	/*padding: 24px;*/
+	margin: 12px;
 }
 
 p.time-stamp {
