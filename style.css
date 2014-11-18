@@ -5,10 +5,9 @@ Description: A minimal, no-frills Wordpress Theme
 Author: Andrew Todd
 Author URI: http://drwtod.com
 Version: 1.0
-Tags: minimal, white, fixed
-
-License: TBD
-License URI: TBD
+License: GNU General Public License
+License URI: license.txt
+Tags: minimal, white, fixed-layout, light, one-column
 
 No-frills theme built for drwtod.com
 */
@@ -151,17 +150,17 @@ h1.pagehead a {
 	/* background: #555; */
 	background: #b00;
 	color: #f0f0f0;
+	-webkit-transition: all .5s ease-in-out;
+  	-moz-transition: all .5s ease-in-out;
+  	-ms-transition: all .5s ease-in-out;
+  	-o-transition: all .5s ease-in-out;
+  	transition: all .5s; ease-in-out
 	-moz-border-radius-bottomleft: 3px;
 	-webkit-border-bottom-left-radius: 3px;
 	border-bottom-left-radius: 3px;
 	-moz-border-radius-bottomright: 3px;
 	-webkit-border-bottom-right-radius: 3px;
 	border-bottom-right-radius: 3px;
-	-webkit-transition: all .5s ease-in-out;
-  	-moz-transition: all .5s ease-in-out;
-  	-ms-transition: all .5s ease-in-out;
-  	-o-transition: all .5s ease-in-out;
-  	transition: all .5s; ease-in-out
 }
 
 #navmain a:visited {
