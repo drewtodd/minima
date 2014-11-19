@@ -16,8 +16,9 @@
     				<?php endif; ?>
 
                     <nav>
-                        <div class="navpage">
-                             <div class="nav-prev">&lt; Previous entry</div>
+                        <div class="nav-page">
+                             <div class="nav-prev"><?php previous_post_link('%link &raquo;'); ?></div>
+                             <div class="nav-next"><?php next_post_link('&laquo; %link'); ?></div>
                        </div>
                    </nav>
     			</div>

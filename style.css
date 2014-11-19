@@ -83,7 +83,7 @@ body {
 
 body {
 	width: 760px;
-	background: #f8f8f8;
+	background: #efefef;
 	margin: auto;
 	color: rgb(60,60,60);
 	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
@@ -161,7 +161,20 @@ h1.pagehead a {
 
 }
 
-#content {
+.nav-prev, .nav-next {
+	padding-top: 24px;
+	font-size: 16px;
+}
+
+.nav-prev {
+	float: right;
+}
+
+.nav-next {
+	float: left;
+}
+
+#content  {
 	margin-top: 12px;
 	margin-right: 48px;
 	margin-bottom: 24px;
@@ -239,8 +252,16 @@ a:active {
 /*	=STANDARD ELEMENTS
 	------------------------------------------------------ */
 
-p {
+/* Standard element padding */
+
+p, pre, ul, ol, .nav-page {
 	padding: 6px 24px 6px 24px;
+}
+
+p.time-stamp {
+	color: #bbb;
+	font-size: small;
+	font-style: italic;
 }
 
 ul {
@@ -248,6 +269,13 @@ ul {
 	margin-right: 24px;
 	margin-bottom: 12px;
 	margin-left: 48px;
+}
+
+pre {
+	border-left: 4px solid #d3d3d3;
+}
+
+code {
 }
 
 blockquote {
@@ -259,10 +287,8 @@ blockquote {
 	margin: 12px;
 }
 
-p.time-stamp {
-	color: #bbb;
-	font-size: small;
-	font-style: italic;
+pre {
+
 }
 
 /*	=IMAGES
