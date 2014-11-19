@@ -83,20 +83,14 @@ body {
 
 body {
 	width: 760px;
-	background: rgb(232,232,232);
+	background: #f8f8f8;
 	margin: auto;
 	color: rgb(60,60,60);
 	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
 }
 
 #page {
-	background: #f8f8f8;
-	-moz-border-radius: 6px;
-	-webkit-border-radius: 6px;
-	border-radius: 6px;
-	-moz-box-shadow: 0 0 24px 6px #d3d3d3;
-	-webkit-box-shadow: 0 0 24px 6px #d3d3d3;
-	box-shadow: 0 0 24px 6px #d3d3d3;
+	border-left: 1px solid #ccc;
 }
 
 #header {
