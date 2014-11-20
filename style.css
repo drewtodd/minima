@@ -281,9 +281,6 @@ pre {
 /*	border-left: 4px solid #d3d3d3; */
 }
 
-code {
-}
-
 blockquote {
 	font-size: 22px;
 	line-height: 32px;
@@ -293,8 +290,11 @@ blockquote {
 	margin: 12px;
 }
 
-pre {
-
+q {
+	font-size: 22px;
+	line-height: 32px;
+	color: #999;
+	margin: 12px;
 }
 
 /*	=IMAGES
