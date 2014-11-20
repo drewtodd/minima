@@ -14,11 +14,7 @@ get_header(); ?>
                             <?php the_content(); ?>
 
                             <h2>Contents of this site</h2>
-                            <!--<ul>
-                                <?php wp_get_archives('type=postbypost'); ?>
-                            </ul>-->
-                        </article>
-    
+
                         <?php endwhile; wp_reset_postdata(); ?>
 
                         <!-- new loop -->
@@ -29,6 +25,8 @@ get_header(); ?>
                         <?php echo '<p>' . get_the_excerpt() . '</p>'; ?>
                         <?php endwhile; endif; wp_reset_postdata(); ?>
 
+                        </article>
+    
                         <nav>
                             <div class="navpage">
                                  <div class="nav-prev"><?php previous_posts_link(); ?></div>

@@ -17,7 +17,7 @@
             <header id="masthead" class="site-header">
                 <div id="header">
                     <nav role="navigation">
-                        <div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content' ); ?>"><?php _e( 'Skip to content' ); ?></a></div>
+                        <div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to main content' ); ?>"><?php _e( 'Skip to content' ); ?></a></div>
                         <div id="navmain">
                             <?php wp_nav_menu( array( 'theme_location' => 'primary-nav' ) ); ?>
                         </div>
@@ -25,10 +25,7 @@
                     
                     <!-- Print page header/logo with link, if needed -->
                     <h1 class="pagehead">
-                    <?php if ( ! is_home() ) { echo '<a href="' . site_url() . '">'; } ?>
-                    <?php bloginfo('name'); ?>
-                    <?php if ( ! is_home() ) { echo '</a>'; } ?>
-                    <!--<?php echo get_header_string( is_home(), bloginfo('name'), site_url() ); ?>-->
+                    <?php if ( ! is_home() ) { echo '<a href="' . site_url() . '">'; } ?><?php bloginfo('name'); ?><?php if ( ! is_home() ) { echo '</a>'; } ?>
                     </h1>
                 </div>
             </header>
