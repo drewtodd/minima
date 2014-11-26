@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="<?php bloginfo( 'charset' ); ?>" />
+<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900italic,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>        <meta charset="<?php bloginfo( 'charset' ); ?>" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <title><?php wp_title('|',1,'right'); ?> <?php bloginfo('name'); ?></title>
         <!--[if lt IE 9]>
