@@ -38,6 +38,10 @@ a img {border: 0;}
 /*	Typography presets
 	------------------	*/
 
+h1, h2 {
+	font-family: 'Special Elite';
+}
+
 .gigantic {
 	font-size: 110px;
 	line-height: 120px;

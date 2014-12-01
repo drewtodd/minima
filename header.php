@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
     <head>
-<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900italic,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>        <meta charset="<?php bloginfo( 'charset' ); ?>" />
+    <link href='http://fonts.googleapis.com/css?family=Special+Elite|Merriweather:400,300italic,300,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <title><?php wp_title('|',1,'right'); ?> <?php bloginfo('name'); ?></title>
         <!--[if lt IE 9]>
             <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
         <link rel="stylesheet" media="all" href="<?php bloginfo('stylesheet_url');?>">
-        
+
         <?php wp_head(); ?>
     </head>
 
