@@ -144,7 +144,7 @@ h1.pagehead a {
 #navmain a {
 	text-decoration: none;
 	border: 0px;
-	color: #999;
+	color: #888;
 	padding: 96px 12px 6px 12px;
 	margin-left: 6px;
 	margin-right: 6px;
@@ -242,21 +242,22 @@ h1, h2, h3, h4, h5, h6 {
 	------------------------------------------------------ */
 a {
 	text-decoration: none;
-	color: #666;
-	border-bottom: dotted 1px #666;
+	border-bottom: dotted 1px #b00;
+	color: #b00;
 }
 
 a:hover {
-	color: #ccc;
-	border-bottom: dotted 1px #ccc;
+	color: #d00;
+	border-bottom: dotted 1px #d00;
 }
 
 a:visited {
-	
+	color: #888;	
+	border-bottom: dotted 1px #888;
 }
 
 a:active {
-	
+	color: #600;
 }
 
 /*	=STANDARD ELEMENTS
