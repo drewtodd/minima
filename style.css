@@ -38,29 +38,23 @@ a img {border: 0;}
 /*	Typography presets
 	------------------	*/
 
-.gigantic {
-	font-size: 110px;
-	line-height: 120px;
-	letter-spacing: -2px;
-}
-
-.huge, h1 {
+h1 {
 	font-size: 42px;
 	line-height: 72px;
 	letter-spacing: -1px;
 }
 
-.large, h2 {
+h2 {
 	font-size: 26px;
 	line-height: 48px;
 }
 
-.bigger, h3 {
+h3 {
 	font-size: 22px;
 	line-height: 36px;
 }
 
-.big, h4 {
+h4 {
 	font-size: 18px;
 	font-weight: bolder;
 	line-height: 30px;
@@ -71,7 +65,7 @@ body {
 	/*font: 16px/24px Helvetica, Arial, sans-serif;*/
 }
 
-.small, small {
+small {
 	font-size: 13px;
 	line-height: 18px;
 }
