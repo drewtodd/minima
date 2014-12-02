@@ -214,17 +214,15 @@ div.navlocal h4 {
 }
 
 #footer {
-	margin-right: 48px;
-	margin-bottom: 96px;
-	margin-left: 48px;
+	margin: 96px 48px 96px 48px;
 	clear: left;
-	padding-top: 48px;
-	padding-bottom: 48px;
 }
 
-#footer p {
+#footer .copyright {
 	color: #bbb;
-	font-size: 14px;
+	font-size: 12px;
+	font-weight: 300;
+	border-top: 1px dotted #ddd;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -316,12 +314,22 @@ img {
 	font-size: small;		
 }
 
-.img-right, .img-right img  {
+.size-medium, .size-medium img  {
 	width: 236px;
+	height: auto;
+	padding: 12px;
+	border: 1px solid #bbb;
 }
-.img-right, .alignright {
+
+.size-full, .size-full img  {
+	width: 616px;
+	height: auto;
 	padding: 0px 0px 24px 24px;
+}
+
+.alignright {
 	float: right;
+	margin: 0px 0px 18px 18px;
 	color: #999;
 	font: 16px/20px Georgia, serif italic;	
 }
