@@ -168,10 +168,13 @@ h1.pagehead a {
 
 .nav-prev {
 	float: right;
+	text-align: right;
+	width: 45%;
 }
 
 .nav-next {
 	float: left;
+	width: 45%;
 }
 
 #content  {
@@ -263,6 +266,7 @@ p.time-stamp {
 	color: #bbb;
 	font-size: small;
 	font-style: italic;
+	margin-top: 25px;
 }
 
 ul {
@@ -315,7 +319,7 @@ img {
 .img-right, .img-right img  {
 	width: 236px;
 }
-.img-right {
+.img-right, .alignright {
 	padding: 0px 0px 24px 24px;
 	float: right;
 	color: #999;
