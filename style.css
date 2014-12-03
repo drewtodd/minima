@@ -80,7 +80,7 @@ body {
 	background: #efefef;
 	margin: auto;
 	color: rgb(60,60,60);
-	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+	/* -webkit-text-size-adjust: 100%; Stops Mobile Safari from auto-adjusting font-sizes */
 }
 
 #page {
@@ -258,6 +258,7 @@ a:active {
 
 p, pre, ul, ol, .nav-page {
 	padding: 6px 24px 6px 24px;
+	line-height: 200%;
 }
 
 p.time-stamp {
@@ -280,7 +281,7 @@ pre {
 
 blockquote {
 	font-size: 22px;
-	line-height: 32px;
+	line-height: 200%;
 	color: #999;
 	border-left: 4px solid #d3d3d3;
 	/*padding: 24px;*/
@@ -289,7 +290,7 @@ blockquote {
 
 q {
 	font-size: 22px;
-	line-height: 32px;
+	line-height: 200%;
 	color: #999;
 	margin: 12px;
 }
@@ -319,6 +320,7 @@ img {
 	height: auto;
 	padding: 12px;
 	border: 1px solid #bbb;
+	background-color: #fff;
 }
 
 .size-full, .size-full img  {

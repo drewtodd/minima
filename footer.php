@@ -1,7 +1,7 @@
 
 
             <footer id="footer">
-                <p class="copyright">Copyright &copy; 2013-<?php echo date ("Y"); ?> Andrew D. Todd. Opinions expressed herein are my own and do not represent those of my employer nor any other organization with whom I am affiliated.</p>
+                <p class="copyright">Copyright &copy; 2013-<?php echo date ("Y"); ?>; Andrew D. Todd. Opinions expressed herein are my own and do not represent those of my employer nor any other organization with whom I am affiliated.</p>
             </footer>  
         </div>
     
