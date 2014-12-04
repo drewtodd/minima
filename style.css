@@ -9,7 +9,9 @@ License: GNU General Public License
 License URI: license.txt
 Tags: minimal, white, fixed-layout, light, one-column
 
-No-frills theme built for drwtod.com
+No-frills theme built for drwtod.com. Adding elements as needed,
+so this may or may not support all Wordpress features or
+HTML elements. Feel free to use, but don't expect perfection.
 */
 
 /*	Resets
@@ -38,36 +40,42 @@ a img {border: 0;}
 /*	Typography presets
 	------------------	*/
 
-h1 {
-	font-size: 42px;
-	line-height: 72px;
-	letter-spacing: -1px;
-}
-
-h2 {
-	font-size: 26px;
-	line-height: 48px;
-}
-
-h3 {
-	font-size: 22px;
-	line-height: 36px;
-}
-
-h4 {
-	font-size: 18px;
-	font-weight: bolder;
-	line-height: 30px;
+html {
+	font-size: 62.5%;
 }
 
 body {
-	font: 18px/28px 'Merriweather', Georgia, serif;
-	/*font: 16px/24px Helvetica, Arial, sans-serif;*/
+	background: #efefef;
+	color: rgb(60,60,60);
+	font: 18px/2.00 'Merriweather', Georgia, serif;
+	/* Golden ratio applied to line-height; */
+	/* inherited by descendent elements.    */
+}
+
+h1 {
+	font-size: 4.7rem;
+	letter-spacing: -0.1rem;
+}
+
+h2 {
+	font-size: 2.9rem;
+}
+
+h3 {
+	font-size: 2.3rem;
+}
+
+h4 {
+	font-size: 1.8rem;
+	font-weight: bolder;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 3.24rem 2.4rem 1.62rem 2.4rem;
 }
 
 small {
-	font-size: 13px;
-	line-height: 18px;
+	font-size: 1.4rem;
 }
 
 /*		Default Layout: 760px. 
@@ -75,52 +83,46 @@ small {
 		Outer margins: 48px.
 */
 
-body {
-	width: 760px;
-	background: #efefef;
-	margin: auto;
-	color: rgb(60,60,60);
-	/* -webkit-text-size-adjust: 100%; Stops Mobile Safari from auto-adjusting font-sizes */
-}
-
 #page {
-	border-left: 1px solid #ccc;
+	width: 76.0rem;
+	margin: auto;
+	border-left: .1rem solid #ccc;
 }
 
 #header {
-	margin-top: 48px;
-	margin-right: 48px;
-	margin-bottom: 12px;
-	margin-left: 48px;
+	margin-top: 4.8rem;
+	margin-right: 4.8rem;
+	margin-bottom: 1.2rem;
+	margin-left: 4.8rem;
 }
 
 h1.sitehead {
-	font-size: 68px;
-	padding-top: 96px;
+	font-size: 6.8rem;
+	padding-top: 9.6rem;
 	float: left;
 }
 
 h1.pagehead {
-	font-size: 24px;
-	padding-top: 2px;
+	font-size: 2.3rem;
+	padding-top: 3.24rem;
 	color: #b00;
 	float: left;
 }
 
-h1.pagehead a {
+h1.pagehead a, h1.pagehead a:visited {
 	color: #b00;
 }
 
 #navmain .menu {
 	float:right;
-	margin: 0px;
-	padding-right: 0px;
+	margin: 0rem;
+	padding-right: 0rem;
 }
 
 #navmain {
-	margin-top: 0px;
+	margin-top: 0rem;
 	float: right;
-	padding-top: 20px;
+	padding-top: 3.24rem;
 }
 
 #navmain ul {
@@ -133,15 +135,14 @@ h1.pagehead a {
 
 #navmain a {
 	text-decoration: none;
-	border: 0px;
+	border: 0rem;
 	color: #888;
-	padding: 96px 12px 6px 12px;
-	margin-left: 6px;
-	margin-right: 6px;
+	padding: 9.6rem 1.2rem .6rem 1.2rem;
+	margin-left: .6rem;
+	margin-right: .6rem;
 }
 
 #navmain a:hover, navmain a:active {
-	/* background: #555; */
 	background: #b00;
 	color: #f0f0f0;
 	-webkit-transition: all .5s ease-in-out;
@@ -162,38 +163,40 @@ h1.pagehead a {
 }
 
 .nav-prev, .nav-next {
-	padding-top: 24px;
-	font-size: 16px;
+	padding-top: 2.4rem;
 }
 
 .nav-prev {
 	float: right;
 	text-align: right;
-	width: 45%;
+	width: 47%;
 }
 
 .nav-next {
 	float: left;
-	width: 45%;
+	width: 47%;
+}
+
+header h1 a, header h1 a:visited {
+	color: rgb(60,60,60);
 }
 
 #content  {
-	margin-top: 12px;
-	margin-right: 48px;
-	margin-bottom: 24px;
-	margin-left: 48px;
-	/* padding: 24px; */
+	margin-top: 1.2rem;
+	margin-right: 4.8rem;
+	margin-bottom: 2.4rem;
+	margin-left: 4.8rem;
 	clear: left;
 }
 
 #content ul {
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-top: 0rem;
+	margin-bottom: 0rem;
 }
 
 #content ul li {
-	padding-top: 13px;
-	padding-bottom: 9px;
+	padding-top: 1.4rem;
+	padding-bottom: .6rem;
 }
 
 .navlocal {
@@ -214,37 +217,33 @@ div.navlocal h4 {
 }
 
 #footer {
-	margin: 96px 48px 96px 48px;
+	margin: 9.6rem 4.8rem 9.6rem 4.8rem;
 	clear: left;
 }
 
 #footer .copyright {
 	color: #bbb;
-	font-size: 12px;
+	font-size: 1.2rem;
 	font-weight: 300;
-	border-top: 1px dotted #ddd;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	padding: 24px 24px 6px 24px;
+	border-top: .1rem dotted #ddd;
 }
 
 /*	=LINKS
 	------------------------------------------------------ */
 a {
 	text-decoration: none;
-	border-bottom: dotted 1px #b00;
+	border-bottom: dotted .1rem #b00;
 	color: #b00;
 }
 
 a:hover {
 	color: #d00;
-	border-bottom: dotted 1px #d00;
+	border-bottom: dotted .1rem #d00;
 }
 
 a:visited {
 	color: #888;	
-	border-bottom: dotted 1px #888;
+	border-bottom: dotted .1rem #888;
 }
 
 a:active {
@@ -257,22 +256,21 @@ a:active {
 /* Standard element padding */
 
 p, pre, ul, ol, .nav-page {
-	padding: 6px 24px 6px 24px;
-	line-height: 200%;
+	padding: 1.2rem 2.4rem .6rem 2.4rem;
 }
 
 p.time-stamp {
 	color: #bbb;
 	font-size: small;
 	font-style: italic;
-	margin-top: 25px;
+	margin-top: 2.3rem;
 }
 
 ul {
-	margin-top: 6px;
-	margin-right: 24px;
-	margin-bottom: 12px;
-	margin-left: 48px;
+	margin-top: .6rem;
+	margin-right: 2.4rem;
+	margin-bottom: 1.2rem;
+	margin-left: 4.8rem;
 }
 
 pre {
@@ -280,19 +278,19 @@ pre {
 }
 
 blockquote {
-	font-size: 22px;
-	line-height: 200%;
-	color: #999;
-	border-left: 4px solid #d3d3d3;
+	font-size: 2.3rem;
+	/* color: #999; */
+	color: #b00;
+	/* border-left: 4px solid #d3d3d3; */
+	border-left: .4rem solid #b00;
 	/*padding: 24px;*/
-	margin: 12px;
+	margin: 1.2rem;
 }
 
 q {
-	font-size: 22px;
-	line-height: 200%;
+	font-size: 2.3rem;
 	color: #999;
-	margin: 12px;
+	margin: 1.2rem;
 }
 
 /*	=IMAGES
@@ -305,28 +303,28 @@ img {
 }
 
 .img-center, .img-center img {
-	width: 616px;
+	width: 61.6rem;
 }
 
 .img-center {
-	padding: 12px 0px 12px 0px;
+	padding: 1.2rem 0rem 1.2rem 0rem;
 	color: #999;
 	font-style: italic;
 	font-size: small;		
 }
 
 .size-medium, .size-medium img  {
-	width: 236px;
+	width: 23.6rem;
 	height: auto;
-	padding: 12px;
-	border: 1px solid #bbb;
+	padding: 1.2rem;
+	border: .1rem solid #bbb;
 	background-color: #fff;
 }
 
 .size-full, .size-full img  {
-	width: 616px;
+	width: 61.6rem;
 	height: auto;
-	padding: 0px 0px 24px 24px;
+	padding: 0rem 0rem 2.4rem 2.4rem;
 }
 
 .alignright {
