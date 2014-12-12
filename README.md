@@ -15,5 +15,7 @@ Features (will) include:
 - Accessible
 
 License: GNU General Public License
+
 Tags: minimal, white, fixed-layout, light, one-column
 
+![Sample screen](http://drwtod.com/wp-content/uploads/sample.png "Sample screen")
